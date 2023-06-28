@@ -1,12 +1,14 @@
 # Quantum-Hadamard-Edge-detection
 A Quantum Algorithm for Image edge detection utilizing the principles of Quantum Computing and Quantum Parallelism and Hadamard Gate
-------------------------------------------------------------------------------------------------------------------------------------
-Implementation Objectives:
+
+#Implementation Objectives:
 1.To implement Quantum edge detection for a 8x8 binary image array.
+
 2.To implement Quantum edge detection for a 32x32 binary image array.
+
 3.To implement Quantum edge detection for a 32x32 RGB image array
 
-code Implementation details:
+# code Implementation details:
 
 The edge detection algorithm aims to identify the boundaries or edges of objects
 within an image. The algorithm consists of the following steps:
@@ -40,4 +42,24 @@ using threshold as < 1e − 15 or > 1e + 15. This way we obtain vertical scan ed
 6. Combine Scan Results: - Combine the results of the horizontal and vertical
 scans using OR Logical gate to obtain the final edge-detected image.
 
+
+<img width="319" alt="image" src="https://github.com/Akshara-Bulkapuram/Quantum-Hadamard-Edge-detection/assets/94600166/0fd5b347-9d1a-48bb-8026-e7c51a85929a">
+<img width="224" alt="image" src="https://github.com/Akshara-Bulkapuram/Quantum-Hadamard-Edge-detection/assets/94600166/d886f951-1f75-4616-84e7-068cabea8630">
+<img width="196" alt="image" src="https://github.com/Akshara-Bulkapuram/Quantum-Hadamard-Edge-detection/assets/94600166/3a8ffd0c-17db-44e9-a20c-38bf4bbde682">
+<img width="203" alt="image" src="https://github.com/Akshara-Bulkapuram/Quantum-Hadamard-Edge-detection/assets/94600166/4155561c-e027-4c2d-b397-7dcb3ba86433">
+
+# results
+
+1.For 8x8 binary image
+we used 5+1 total 6 qubits for edge detection. The edge detection result is as shown
+in fig 5.1(a)
+
+2.For 32x32 binary image
+we used 11 qubits in total. The time taken for execution was greater than for 8x8
+image. the edge detection result is as shown in fig 5.1.(b)
+
+3.For 32x32 RGB image
+For RGB image we has to perform edge detection piece-wise to get the final edge
+detected image.
+<img width="271" alt="image" src="https://github.com/Akshara-Bulkapuram/Quantum-Hadamard-Edge-detection/assets/94600166/13e51c46-9151-46ad-b638-17a9ec7c96e7">
 
